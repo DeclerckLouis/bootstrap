@@ -23,4 +23,4 @@ if [[ $(pwd) != "/opt/bootstrap" ]]; then
     exit 0
 fi
 
-echo "hello!
+echo "hello!"

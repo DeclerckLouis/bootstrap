@@ -19,7 +19,7 @@ if [[ $(pwd) != "/opt/bootstrap" ]]; then
         git clone https://github.com/declercklouis/bootstrap /opt/bootstrap
         chmod +x /opt/bootstrap/bootstrap.sh
     fi
-    cd /opt/bootstrap
+    cd /opt/bootstrap && git pull
     exec /opt/bootstrap/bootstrap.sh "$@"
     exit 0
 fi

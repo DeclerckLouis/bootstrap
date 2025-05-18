@@ -43,6 +43,7 @@ if [[ ! -f ~/.ssh/authorized_keys ]]; then
 fi
 curl -s github.com/declercklouis.keys >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
+echo "I'm alive"
 # Remove duplicate keys
 awk '!seen[$0]++' ~/.ssh/authorized_keys > ~/.ssh/authorized_keys.tmp
 mv ~/.ssh/authorized_keys.tmp ~/.ssh/authorized_keys
